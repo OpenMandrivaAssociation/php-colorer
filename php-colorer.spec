@@ -14,7 +14,6 @@ Source0:	http://pecl.php.net/get/%{modname}-%{version}.tar.bz2
 Patch0:		colorer-0.7-no_rpath.diff
 BuildRequires:	php-devel >= 3:5.2.0
 BuildRequires:	libcolorer-devel
-BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 Colorer take5 is a syntax highlighting and text parsing library, that provides
