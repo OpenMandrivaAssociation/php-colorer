@@ -6,7 +6,7 @@
 Summary:	Syntax highlighting for PHP
 Name:		php-%{modname}
 Version:	0.7
-Release:	%mkrel 14
+Release:	%mkrel 15
 Group:		Development/PHP
 License:	PHP License
 URL:		http://pecl.php.net/package/colorer
@@ -14,7 +14,7 @@ Source0:	http://pecl.php.net/get/%{modname}-%{version}.tar.bz2
 Patch0:		colorer-0.7-no_rpath.diff
 BuildRequires:	php-devel >= 3:5.2.0
 BuildRequires:	libcolorer-devel
-BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 Colorer take5 is a syntax highlighting and text parsing library, that provides
