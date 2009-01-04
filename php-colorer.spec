@@ -6,12 +6,13 @@
 Summary:	Syntax highlighting for PHP
 Name:		php-%{modname}
 Version:	0.7
-Release:	%mkrel 17
+Release:	%mkrel 18
 Group:		Development/PHP
 License:	PHP License
 URL:		http://pecl.php.net/package/colorer
 Source0:	http://pecl.php.net/get/%{modname}-%{version}.tar.bz2
 Patch0:		colorer-0.7-no_rpath.diff
+Patch1:		colorer-0.7-format_not_a_string_literal_and_no_format_arguments.diff
 BuildRequires:	php-devel >= 3:5.2.0
 BuildRequires:	libcolorer-devel
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
@@ -32,6 +33,7 @@ highlighting.
 [ "../package*.xml" != "/" ] && mv ../package*.xml .
 
 %patch0 -p0
+%patch1 -p0
 
 # lib64 fix
 perl -pi -e "s|/lib\b|/%{_lib}|g" config.m4
