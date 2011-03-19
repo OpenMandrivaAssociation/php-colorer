@@ -6,7 +6,7 @@
 Summary:	Syntax highlighting for PHP
 Name:		php-%{modname}
 Version:	0.7
-Release:	%mkrel 30
+Release:	%mkrel 31
 Group:		Development/PHP
 License:	PHP License
 URL:		http://pecl.php.net/package/colorer
