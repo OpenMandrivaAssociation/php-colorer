@@ -1,0 +1,10 @@
+--- config.m4	2005-05-02 13:01:41.000000000 +0200
++++ config.m4.oden	2006-03-21 16:37:58.000000000 +0100
+@@ -48,7 +48,6 @@
+   PHP_ADD_LIBRARY(stdc++, , COLORER_SHARED_LIBADD)
+   AC_DEFINE(HAVE_COLORERLIB,1,[ ])
+   PHP_SUBST(COLORER_SHARED_LIBADD)
+-  LDFLAGS="$LDFLAGS $ld_runpath_switch$COLORER_DIR/lib -L$COLORER_DIR/lib"
+   
+   PHP_REQUIRE_CXX
+   PHP_NEW_EXTENSION(colorer, colorer.cpp, $ext_shared)

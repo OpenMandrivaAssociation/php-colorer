@@ -1,0 +1,11 @@
+--- colorer.cpp	2005-11-21 08:26:13.000000000 +0100
++++ colorer.cpp.oden	2009-01-04 12:46:43.000000000 +0100
+@@ -625,7 +625,7 @@ static int colorer_do_highlight(INTERNAL
+ 			catch(Exception & e) {
+ 				php_error(E_WARNING, "can't open file '%s' for writing:\n",
+ 						  outFile->getChars());
+-				php_error(E_WARNING, e.getMessage()->getChars());
++				php_error(E_WARNING, "%s", e.getMessage()->getChars());
+ 				return FAILURE;
+ 			}
+ 		}
