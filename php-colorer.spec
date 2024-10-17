@@ -9,7 +9,7 @@ Version:	0.7
 Release:	%mkrel 35
 Group:		Development/PHP
 License:	PHP License
-URL:		http://pecl.php.net/package/colorer
+URL:		https://pecl.php.net/package/colorer
 Source0:	http://pecl.php.net/get/%{modname}-%{version}.tar.bz2
 Patch0:		colorer-0.7-no_rpath.diff
 Patch1:		colorer-0.7-format_not_a_string_literal_and_no_format_arguments.diff
